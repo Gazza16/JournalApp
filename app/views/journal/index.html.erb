@@ -1,0 +1,27 @@
+<h1>hello</h1>
+<p>Welcome</p>
+<%= simple_form_for @post, url:'/create' do |f| %>
+<%= f.input :title %>
+<%= f.text_area :content %>
+<%= f.submit %>
+<% end %>
+
+<% @posts.each do |post| %>
+<hr>
+<p>have a great day</p>
+<hr>
+<h2><%= post.title %></h2>
+<hr>
+<p><%= post.content %></p>
+
+<%end%>
+
+<% @posts.each do |post| %>
+<hr>
+<p>have a great day</p>
+<hr>
+<h2><%= post.title %></h2>
+<hr>
+<p><%= post.content %></p>
+
+<%end%>
